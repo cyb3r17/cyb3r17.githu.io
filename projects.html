@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects </title>
+    <link rel="icon" type="image/x-icon" href="static/lain.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+</head>
+<body>
+    <img id="bg-flyingmachine" src="static/imgs/flyingmachine.png" alt="" aria-hidden="true">
+    <img id="bg-flyin2" src="static/imgs/flyin2.png" alt="" aria-hidden="true">
+    <img id="bg-vitruvian" src="static/imgs/Vitruvianischer_Mann.png" alt="" aria-hidden="true">
+    <div class="site-container">
+        <div class="about-me">
+            <h1 class="site-header">
+                <span>Projects</span>
+                <a href="https://shunyaresearch.systems" target="_blank" rel="noopener">
+                    <img src="static/shunya.png" alt="Shunya Research" class="header-logo header-logo-light">
+                    <img src="static/shunya-removebg-preview.png" alt="Shunya Research" class="header-logo header-logo-dark">
+                </a>
+            </h1>
+            
+            <ul class="projects-list">
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>darkwire</strong> -Send bitcoin without the internet over LoRa radio mesh networks</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/darkwire" target="_blank" rel="noopener">↗ darkwire</a><br><br>
+                            An open source framework to send bitcoin without the internet over LoRa (long range) radio mesh networks.<br><br>
+                            <a href="https://decrypt.co/322192/project-send-bitcoin-without-internet-access" target="_blank" rel="noopener">Decrypt article</a><br><br>
+                            <img src="static/imgs/projects/darkwire_node.png" alt="darkwire" style="width:500px;">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>ironeye</strong> -AI powered air to surface auto targeting system</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/iron-eye" target="_blank" rel="noopener">↗ ironeye</a><br><br>
+                            A multi-modal AI system for auto targeting and NLP based control of agents (military aircrafts) simulated in War Thunder. Won 3rd place at HAL Aerothon 2025.<br><br>
+                            <a href="https://www.kaggle.com/datasets/iavinash/war-thunder-dataset" target="_blank" rel="noopener">Kaggle dataset</a><br><br>
+                            <img src="static/imgs/projects/ironeye.png" alt="ironeye" style="width:500px;"><br>
+                            <img src="static/imgs/projects/ironeye-person.jpeg" alt="ironeye" style="width:500px;">
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>cybergrad</strong> -A toy autograd library built from scratch using cupy for GPU support</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/cybergrad" target="_blank" rel="noopener">↗ cybergrad</a><br><br>
+                            A simple autograd library implemented from scratch using cupy instead of numpy for GPU processing. Written to get a more fundamental understanding of autograd.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>chat-with-jfk-files</strong> -Chat with 2,300+ declassified JFK assassination documents</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/chat-with-jfk-files" target="_blank" rel="noopener">↗ chat-with-jfk-files</a><br><br>
+                            Web app to search and chat with the 2025 JFK file release. Built with ChromaDB, Python, and HTMX.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>tinyrag</strong> -Lightweight plug-and-play RAG framework for Ollama-based LLMs</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/tinyrag" target="_blank" rel="noopener">↗ tinyrag</a><br><br>
+                            A minimal RAG framework designed to integrate with various LLM endpoints with minimal complexity.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>TheOmniscientOne</strong> -Chat with your own data across PDFs, docs, images and YouTube transcripts</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/TheOmniscientOne" target="_blank" rel="noopener">↗ TheOmniscientOne</a><br><br>
+                            One of my early attempts to make LLMs multi-modal -uses GPT-3.5 Turbo and Llama Index to query custom data across PDFs, docs, images and YouTube transcripts via natural language.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>Delamain</strong> -Teaching a car to drive using linear regression on gameplay screenshots</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/Delamain" target="_blank" rel="noopener">↗ Delamain</a><br><br>
+                            A weekend project inspired by Navlab -captures gameplay screenshots mapped to keyboard inputs and uses linear regression to autonomously control a vehicle.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>NanoGPT-Kannada</strong> - GPT-2 trained on TinyBasavanna, a custom Kannada dataset</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/NanoGPT-Kannada" target="_blank" rel="noopener">↗ NanoGPT-Kannada</a><br><br>
+                            Trained NanoGPT on TinyBasavanna, a custom Kannada dataset I made, demonstrating transformer architecture works equally well with non-ASCII scripts.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>ICE</strong> -Intrusion Countermeasures Electronics: server hardening toolkit</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/ICE" target="_blank" rel="noopener">↗ ICE</a><br><br>
+                            A collection of hardening scripts and firmware for servers and networks, including passive defences and honeypots.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>MNIST-CNN</strong> -CNN in PyTorch achieving 99.40% on MNIST</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/MNIST-CNN" target="_blank" rel="noopener">↗ MNIST-CNN</a><br><br>
+                            Three convolutional layers with dropout regularization trained over 10 epochs on the MNIST handwritten digits dataset.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>silverhand</strong> -Cybernetic arm using piezoelectric sensors and servo control</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/silverhand" target="_blank" rel="noopener">↗ silverhand</a><br><br>
+                            Prosthetic arm prototype built in C++ mapping piezoelectric sensor input to servo angles, with plans for a hydraulic-based second version.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>eyePGP</strong> - Generate cryptographic keys from iris biometric data</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/eyePGP" target="_blank" rel="noopener">↗ eyePGP</a><br><br>
+                            A biometric authentication system that deterministically generates Ed25519 key pairs from iris patterns, exporting PGP-compatible keys without ever storing them.
+                        </div>
+                    </div>
+                </li>
+
+                <li class="project-item">
+                    <div class="project-header" onclick="toggleProject(this)">
+                        <span class="project-arrow">▶</span>
+                        <span class="project-title"><strong>wikitok</strong> - Scrollable Wikipedia</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-description">
+                            <a href="https://github.com/cyb3r17/wikitok" target="_blank" rel="noopener">↗ wikitok</a><br><br>
+                            Wikipedia reimagined as an infinite scroll feed, making knowledge discovery more engaging.
+                        </div>
+                    </div>
+                </li>
+
+                <li style="margin-top: 12px;">This page is a work in progress.</li>
+            </ul>
+            &copy; 2026 Sachit | sachitrame.sh
+        </div>
+        
+        <div class="status">
+
+            <div id="spotify" class="spotify-widget">
+                <h2>
+                    Listening to
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <i class="fa-solid fa-sun theme-icon" id="sun-icon"></i>
+                        <i class="fa-solid fa-moon theme-icon" id="moon-icon"></i>
+                    </button>
+                </h2>
+                <a id="spotify-link" href="#" target="_blank" rel="noopener" class="spotify-card" hidden>
+                    <img id="spotify-art" class="spotify-art" src="" alt="">
+                    <div class="spotify-meta">
+                        <div id="spotify-song" class="spotify-song"></div>
+                        <div id="spotify-artist" class="spotify-artist"></div>
+                        <div class="spotify-bar"><div id="spotify-progress" class="spotify-progress"></div></div>
+                    </div>
+                </a>
+                <p id="spotify-idle" class="spotify-idle">not playing anything rn</p>
+            </div>            <h2>Links</h2>
+            <div>
+   <a href="https://www.github.com/cyb3r17" target="_blank" rel="noopener">github</a> • <a href="https://x.com/cyb3r_17" target="_blank" rel="noopener">x/twitter</a> • <a href="mailto:sachit[dot]rg17[at]gmail.com" target="_blank" rel="noopener">email</a> • <a href="https://www.last.fm/user/cyb3r17" target="_blank" rel="noopener">last.fm</a> • <a href="https://www.goodreads.com/cyb3r17" target="_blank" rel="noopener">goodreads</a> • <a href="https://scholar.google.com/citations?hl=en&user=ftcEwSEAAAAJ" target="_blank" rel="noopener">google scholar</a> • <a href="https://www.youtube.com/@cyberwasbored" target="_blank" rel="noopener">youtube</a>
+</div>
+            <h2>Site navigation</h2>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">/home/</a></li>
+                    <li><a href="projects.html">/projects/</a></li>
+                    <li><a href="gallery.html">/gallery/</a></li>
+                    <li><a href="https://substack.com/@cyb3r17" target="_blank" rel="noopener">/blogs/</a></li>
+                </ul>
+            </div>
+
+            <div class="pbuttons">
+                <h2>Buttons</h2>
+                <a href="https://kernel.org" target="_blank" rel="noopener"><img src="static/imgs/buttons/made_onlinux.gif"></a>
+                <a href="https://github.com/cyb3r17/darkwire" target="_blank" rel="noopener"><img src="static/imgs/darkwire88x31.png"></a>
+                <a href="https://nixos.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/nixos2.gif"></a>
+                <a href="https://vscodium.com/" target="_blank" rel="noopener"><img src="static/imgs/buttons/vscbutton.gif"></a>
+                <a href="https://www.firefox.com/en-US/" target="_blank" rel="noopener"><img src="static/imgs/buttons/button102.gif"></a>
+                <a href="https://archive.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/a60.gif"></a>
+                <a href="https://landchad.net/" target="_blank" rel="noopener"><img src="static/imgs/buttons/landchad.gif"></a>
+                <a href="https://www.gnu.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/gnu.png"></a>
+                <a href="https://en.wikipedia.org/wiki/Annexation_of_Tibet_by_the_People%27s_Republic_of_China" target="_blank" rel="noopener"><img src="static/imgs/buttons/button_tibet.gif"></a>
+                <a href="https://youtu.be/6-8E4Nirh9s?si=f3Bz0Uz22VVWpSOS" target="_blank" rel="noopener"><img src="static/imgs/buttons/caramelldansen.gif"></a>
+            </div>
+
+            <h2>My button</h2>
+            <div class="my-button-box">
+                <img src="static/my_button.gif" alt="Sachit's button" width="88" height="31">
+                <textarea readonly rows="3" onclick="this.select()"><a href="https://sachitrame.sh" target="_blank" rel="noopener"><img src="https://sachitrame.sh/static/my_button.gif" alt="Sachit"></a></textarea>
+                <p class="hotlink-note">If you liked my site, add my button =]</p>
+            </div>
+
+            <h2>Banners</h2>
+            <img class="banner-img" src="static/TempleOS_logo.png" alt="TempleOS"><br>
+            Use <a href="https://templeos.org" target="_blank" rel="noopener">Temple OS</a>
+            <br><br>
+            <img class="banner-img" src="static/imgs/aphex2.jpg" alt="Wanderer"><br>
+            Listen to <a href="https://aphextwin.warp.net/" target="_blank" rel="noopener">Aphex Twin</a>
+            <br><br>
+            <img class="banner-img" src="static/imgs/samurai.jpg" alt="Samurai"><br>
+            Play <a href="https://www.cyberpunk.net" target="_blank" rel="noopener">Cyberpunk 2077</a>
+
+            <p class="quote">
+                "An idiot admires complexity, a genius admires simplicity"<br>— Terry A Davis
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function updateThemeIcons(theme) {
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+
+            if (theme === 'dark') {
+                sunIcon.classList.add('active');
+                moonIcon.classList.remove('active');
+            } else {
+                sunIcon.classList.remove('active');
+                moonIcon.classList.add('active');
+            }
+        }
+
+        function toggleProject(header) {
+            const arrow = header.querySelector('.project-arrow');
+            const content = header.nextElementSibling;
+            arrow.classList.toggle('expanded');
+            content.classList.toggle('expanded');
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcons(newTheme);
+        }
+
+       const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcons(savedTheme);
+    </script>
+    <script src="spotify.js"></script>
+
+</body>
+</html>

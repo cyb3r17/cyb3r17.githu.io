@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="static/lain.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
+<style>
+    /* remove the background gridlines for this page */
+    html, body {
+        background-image: none;
+    }
+    h3 {
+        font-size: 16px;
+        margin: 22px 0 6px 0;
+    }
+    .exp-date {
+        color: var(--text-secondary);
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .exp-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0 4px 0;
+    }
+    .exp-gallery img,
+    .exp-gallery video {
+        height: 130px;
+        width: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border: 1px solid var(--border-color);
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <img id="bg-flyingmachine" src="static/imgs/flyingmachine.png" alt="" aria-hidden="true">
+    <img id="bg-flyin2" src="static/imgs/flyin2.png" alt="" aria-hidden="true">
+    <img id="bg-vitruvian" src="static/imgs/Vitruvianischer_Mann.png" alt="" aria-hidden="true">
+    <div class="site-container">
+        <div class="about-me">
+            <h1 class="site-header">
+                <span>About me</span>
+                <a href="https://shunyaresearch.systems" target="_blank" rel="noopener">
+                    <img src="static/shunya.png" alt="Shunya Research" class="header-logo header-logo-light">
+                    <img src="static/shunya-removebg-preview.png" alt="Shunya Research" class="header-logo header-logo-dark">
+                </a>
+            </h1>
+            <img class="profile-img" src="terry.jpeg" alt="Profile picture">
+
+            <p>Hi, I'm Sachit a 21 year old self-taught engineer from India.</p>
+
+            <p>I've been programming and tinkering with electronics since the age of 14, it's still pretty much what I do all day. I also play a lot of video games.</p>
+
+            <p>I daily drive NixOS on my ThinkPad and like listening to IDM. I also like reading philosophy and history.</p>
+
+            <p>I currently head <a href="https://shunyaresearch.systems" target="_blank" rel="noopener">Shunya Research</a> an independent AI research lab based in Bangalore, India. Working on bio-inspired AI and neuromorphic systems.</p>
+
+Some more stuff about me:
+<ul>
+    <li>I like making unconventional projects to learn things. <a href="https://www.youtube.com/@cyberwasbored" target="_blank" rel="noopener">Watch here</a></li>
+    <li>I will never learn a Javascript framework!!</li>
+    <li>My first Linux distro was Raspbian.</li>
+    <li>My website's icon is a spider, inspired by <a href="https://www.scotclans.com/pages/robert-the-bruce-and-the-spider" target="_blank" rel="noopener">the legend of Robert the Bruce.</a></li>
+    <li>I'm inspired by the likes of Aristotle, Leonardo Da Vinci, Von Neumann, Archimedes of Syracuse, Terry Davis and Steve Jobs.</li>
+    <li>I write a bi-weekly newsletter, <a href="https://spikenets.substack.com/" target="_blank" rel="noopener">Spikenets</a>, on bio-inspired AI and related topics (please subscribe, it's free and has no ads!)</li>
+    <li>I like military aviation.</li>
+    <li>My engineering range spans RF/LoRa, embedded systems, formal methods, computer vision, rocketry and quadcopter drones.</li>
+    <li>I love open source software.</li>
+</ul>
+
+            <h2>Experience</h2>
+
+            <h3><a href="https://www.isro.gov.in/ISTRAC.html" target="_blank" rel="noopener">Indian Space Research Organisation (ISRO)</a> — Research Intern <span class="exp-date">Jul 2025 - Sep 2025</span></h3>
+            <p>During my tenure as a research inte
+                rn I implemented a ConvLSTM model from scratch to predict rainrate over Kochi from data gathered during the 2018 Kerala monsoon floods. My model managed to reconstruct rainrate plots with 0.8 SSIM score on average. During my time here I also learnt how government agencies work and why they're so inefficient, this has had a significant impact on my career and approach to work.</p>
+            <div class="exp-gallery">
+                <a href="static/imgs/projects/kochi.jpeg"><img src="static/imgs/projects/kochi.jpeg" alt="Kochi rainrate"></a>
+                <a href="static/imgs/projects/kochi2.jpeg"><img src="static/imgs/projects/kochi2.jpeg" alt="Kochi rainrate"></a>
+            </div>
+
+            <h3><a href="https://www.teamantariksh.in/" target="_blank" rel="noopener">Team Antariksh</a> — Payload Avionics Engineer <span class="exp-date">Oct 2024 - Dec 2025</span></h3>
+            <p>I served as the Payload Avionics Engineer at Team Antariksh, a student rocketry team. During my tenure I worked on the telemetry of our rocket (codename lakshya) payload (codename starguide). We ended up winning first place at the IN-SPACE rocketry competition 2024-2025.</p>
+            <div class="exp-gallery">
+                <a href="static/imgs/projects/laskhya.jpg"><img src="static/imgs/projects/laskhya.jpg" alt="Lakshya rocket"></a>
+                <video src="static/gallery/rocket_launch.mp4" controls></video>
+                <a href="static/imgs/projects/deployment.jpeg"><img src="static/imgs/projects/deployment.jpeg" alt="Payload deployment"></a>
+            </div>
+
+            <h2>News</h2>
+            <ul class="news-list">
+                <li><span class="news-date">Jul 5, 2026</span> — Won 3rd place at the <a href="https://cidecode.in/hackathon/" target="_blank" rel="noopener">CIDECODE hackathon</a></li>
+                <li><span class="news-date">Jan 12, 2026</span> — First major open source commit to <a href="https://github.com/google-deepmind/formal-conjectures" target="_blank" rel="noopener">google-deepmind/formal-conjectures</a></li>
+                <li><span class="news-date">Nov 5, 2025</span> — Won 1st place at IN-SPACE rocketry competition with <a href="https://www.teamantariksh.in/" target="_blank" rel="noopener">Team Antariksh</a> — <a href="https://www.thehindu.com/news/national/karnataka/bengaluru-rvces-lakshya-rocket-wins-in-spaces-model-rocketry-competition/article70245081.ece" target="_blank" rel="noopener">The Hindu</a></li>
+                <li><span class="news-date">Jul 20, 2025</span> — Won 3rd place at <a href="https://www.hal-india.co.in/" target="_blank" rel="noopener">HAL Aerothon '25</a> with ironeye</li>
+                <li><span class="news-date">May 27, 2025</span> — darkwire featured in <a href="https://decrypt.co/322192/project-send-bitcoin-without-internet-access" target="_blank" rel="noopener">Decrypt</a></li>
+            </ul>
+            &copy; 2026 Sachit | sachitrame.sh
+        </div>
+
+        <div class="status">
+
+            <div id="spotify" class="spotify-widget">
+                <h2>
+                    Listening to
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+                        <i class="fa-solid fa-sun theme-icon" id="sun-icon"></i>
+                        <i class="fa-solid fa-moon theme-icon" id="moon-icon"></i>
+                    </button>
+                </h2>
+                <a id="spotify-link" href="#" target="_blank" rel="noopener" class="spotify-card" hidden>
+                    <img id="spotify-art" class="spotify-art" src="" alt="">
+                    <div class="spotify-meta">
+                        <div id="spotify-song" class="spotify-song"></div>
+                        <div id="spotify-artist" class="spotify-artist"></div>
+                        <div class="spotify-bar"><div id="spotify-progress" class="spotify-progress"></div></div>
+                    </div>
+                </a>
+                <p id="spotify-idle" class="spotify-idle">not playing anything rn</p>
+            </div>
+
+            <h2>Links</h2>
+            <div>
+   <a href="https://www.github.com/cyb3r17" target="_blank" rel="noopener">github</a> • <a href="https://x.com/cyb3r_17" target="_blank" rel="noopener">x/twitter</a> • <a href="mailto:sachit[dot]rg17[at]gmail.com" target="_blank" rel="noopener">email</a> • <a href="https://www.last.fm/user/cyb3r17" target="_blank" rel="noopener">last.fm</a> • <a href="https://www.goodreads.com/cyb3r17" target="_blank" rel="noopener">goodreads</a> • <a href="https://scholar.google.com/citations?hl=en&user=ftcEwSEAAAAJ" target="_blank" rel="noopener">google scholar</a> • <a href="https://www.youtube.com/@cyberwasbored" target="_blank" rel="noopener">youtube</a>
+</div>
+
+
+            <h2>Site navigation</h2>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">/home/</a></li>
+                    <li><a href="projects.html">/projects/</a></li>
+                    <li><a href="gallery.html">/gallery/</a></li>
+                    <li><a href="https://substack.com/@cyb3r17" target="_blank" rel="noopener">/blogs/</a></li>
+                </ul>
+            </div>
+
+<div class="pbuttons">
+                <h2>Buttons</h2>
+        <a href="https://kernel.org" target="_blank" rel="noopener"><img src="static/imgs/buttons/made_onlinux.gif"></a>
+                <a href="https://github.com/cyb3r17/darkwire" target="_blank" rel="noopener"><img src="static/imgs/darkwire88x31.png"></a>
+                <a href="https://nixos.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/nixos2.gif"></a>
+                <a href="https://vscodium.com/" target="_blank" rel="noopener"><img src="static/imgs/buttons/vscbutton.gif"></a>
+                 <a href="https://www.firefox.com/en-US/" target="_blank" rel="noopener"><img src="static/imgs/buttons/button102.gif"></a>
+                <a href="https://archive.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/a60.gif"></a>
+
+                <a href="https://landchad.net/" target="_blank" rel="noopener"><img src="static/imgs/buttons/landchad.gif"></a>
+                <a href="https://www.gnu.org/" target="_blank" rel="noopener"><img src="static/imgs/buttons/gnu.png"></a>
+                <a href="https://en.wikipedia.org/wiki/Annexation_of_Tibet_by_the_People%27s_Republic_of_China" target="_blank" rel="noopener"><img src="static/imgs/buttons/button_tibet.gif"></a>
+                <a href="https://youtu.be/6-8E4Nirh9s?si=f3Bz0Uz22VVWpSOS" target="_blank" rel="noopener"><img src="static/imgs/buttons/caramelldansen.gif"></a>
+
+            </div>
+
+            <h2>My button</h2>
+            <div class="my-button-box">
+                <img src="static/my_button.gif" alt="Sachit's button" width="88" height="31">
+                <textarea readonly rows="3" onclick="this.select()"><a href="https://sachitrame.sh" target="_blank" rel="noopener"><img src="https://sachitrame.sh/static/my_button.gif" alt="Sachit"></a></textarea>
+                <p class="hotlink-note">If you liked my site, add my button =]</p>
+            </div>
+
+            <h2>Banners</h2>
+            <img class="banner-img" src="static/TempleOS_logo.png" alt="TempleOS"><br>
+            Use <a href="https://templeos.org" target="_blank" rel="noopener">Temple OS</a>
+            <br><br>
+            <img class="banner-img" src="static/imgs/aphex2.jpg" alt="Wanderer"><br>
+            Listen to <a href="https://aphextwin.warp.net/" target="_blank" rel="noopener">Aphex Twin</a>
+            <br><br>
+            <img class="banner-img" src="static/imgs/samurai.jpg" alt="Samurai"><br>
+            Play <a href="https://www.cyberpunk.net" target="_blank" rel="noopener">Cyberpunk 2077</a>
+
+            <p class="quote">
+                "An idiot admires complexity, a genius admires simplicity"<br>— Terry A Davis
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function updateThemeIcons(theme) {
+            const sunIcon = document.getElementById('sun-icon');
+            const moonIcon = document.getElementById('moon-icon');
+
+            if (theme === 'dark') {
+                sunIcon.classList.add('active');
+                moonIcon.classList.remove('active');
+            } else {
+                sunIcon.classList.remove('active');
+                moonIcon.classList.add('active');
+            }
+        }
+
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcons(newTheme);
+        }
+
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        updateThemeIcons(savedTheme);
+</script>
+    <script src="spotify.js"></script>
+
+</body>
+</html>
