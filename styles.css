@@ -216,17 +216,13 @@ h1 {
 .spotify-song {
     font-weight: bold;
     font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-wrap: anywhere;
 }
 
 .spotify-artist {
     font-size: 13px;
     color: var(--text-secondary);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-wrap: anywhere;
 }
 
 .spotify-bar {
@@ -249,6 +245,17 @@ h1 {
     color: var(--text-secondary);
     font-style: italic;
     margin: 0;
+}
+
+.webring {
+    margin-top: 20px;
+    margin-bottom: 24px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.webring a {
+    margin: 0 6px;
 }
 
 h2 {
